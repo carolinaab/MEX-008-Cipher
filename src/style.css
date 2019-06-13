@@ -1,0 +1,11 @@
+
+
+
+.imagenes {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+body {
+    background-image: linear-gradient(to right, #ccffff, #00b3b3, #004d4d);

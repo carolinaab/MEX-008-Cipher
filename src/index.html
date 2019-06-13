@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta charset="utf-8" />
+    <title>Cipher for kids</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+    <main>
+      <div id="root">
+        <h1>Cipher for kids</h1>
+        <p>
+          <strong>Phineas y Ferb</strong> han inventado una forma de planear sus
+          proyectos sin que <strong>Candace</strong> se entere, <br />
+          está mensajeria secreta les permitira comunicarse de manera segura.
+          <br />
+          ¡Tú tambien puedes unirte a la gran aventura! <br />
+          Cifra y descifra los mensajes que tus nuevos amigos te envian.
+        </p>
+        <img
+          class="imagenes"
+          src="https://i.kym-cdn.com/entries/icons/facebook/000/017/738/phineas-and-ferb-01.jpg"
+          alt="p&f"
+        />
+      </div>
+    </main>
+    <aside>
+      <section class="caja-cifrado">
+        <!--caja de cifrado-->
+        <textarea
+          name="mensaje1"
+          id="cifrado"
+          cols="30"
+          rows="10"
+          placeholder="escribe tu mensaje"
+          required
+        ></textarea>
+        <button id="cifrar">cifrar</button>
+      </section>
+
+      <!--offset-->
+      <div class="offset">
+        <label for="clave">clave</label><br /><input
+          type="number"
+          id="offset-text"
+          required
+          value="0"
+          min="0"
+          max="100"
+          ;
+        />
+      </div>
+
+      <!--caja de decifrado-->
+      <section class="caja-decifar">
+        <textarea
+          name="mensaje2"
+          id="cifrado"
+          cols="30"
+          rows="10"
+          placeholder="escribe tu mensaje"
+          required
+        ></textarea>
+        <button id="decifrar">decifrar</button>
+      </section>
+    </aside>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
