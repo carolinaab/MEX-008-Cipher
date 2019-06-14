@@ -1,11 +1,60 @@
 
-
-
 .imagenes {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+    width: 150px;
+    height: 150px;
+   
 }
 
 body {
-    background-image: linear-gradient(to right, #ccffff, #00b3b3, #004d4d);
+   background-image: linear-gradient(to right, #ccffff, #00b3b3, #004d4d);
+}
+
+.contenido .parrafo{
+    width: -50px;
+    height: 100px;
+    font-family: cursive;
+    font-size: 20px;
+    color: rebeccapurple black;
+    
+}
+
+.caja-cifrado{
+ position: absolute;
+ right:250px;
+ top: 450px;
+ 
+
+}
+.caja-descifrar { 
+ 
+ width: 200px;
+ position:absolute;
+ right: 800px;
+ top: 450px;
+  
+
+}
+.offset {
+    
+    width: 50px;
+    position: absolute;
+    right: 610px;
+    top: 450px;
+    font-family: cursive;
+    font-size: 20px;
+}
+.boton1{
+  
+   width: 60px;
+   position: absolute;
+   right: 500px;
+   top: 500px;
+}
+.boton2 {
+
+    width: 70px;
+    position: absolute;
+    right: 680px;
+    top:500px;
+}
+  

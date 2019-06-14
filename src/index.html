@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <div id="root">
+      
+    <main class="contenido">
+<center>
+      
         <h1>Cipher for kids</h1>
-        <p>
+        <p class="parrafo">
           <strong>Phineas y Ferb</strong> han inventado una forma de planear sus
           proyectos sin que <strong>Candace</strong> se entere, <br />
           está mensajeria secreta les permitira comunicarse de manera segura.
           <br />
           ¡Tú tambien puedes unirte a la gran aventura! <br />
-          Cifra y descifra los mensajes que tus nuevos amigos te envian.
+          Descubre que quieren contarte tus nuevos amigos.
         </p>
         <img
           class="imagenes"
           src="https://i.kym-cdn.com/entries/icons/facebook/000/017/738/phineas-and-ferb-01.jpg"
           alt="p&f"
         />
-      </div>
+      </center>
     </main>
-    <aside>
+      
       <section class="caja-cifrado">
         <!--caja de cifrado-->
         <textarea
@@ -32,12 +34,11 @@
           id="cifrado"
           cols="30"
           rows="10"
-          placeholder="escribe tu mensaje"
           required
         ></textarea>
-        <button id="cifrar">cifrar</button>
+        
       </section>
-
+       <br>
       <!--offset-->
       <div class="offset">
         <label for="clave">clave</label><br /><input
@@ -50,9 +51,10 @@
           ;
         />
       </div>
+      <br>
 
       <!--caja de decifrado-->
-      <section class="caja-decifar">
+      <section class="caja-descifrar">
         <textarea
           name="mensaje2"
           id="cifrado"
@@ -61,10 +63,14 @@
           placeholder="escribe tu mensaje"
           required
         ></textarea>
-        <button id="decifrar">decifrar</button>
       </section>
-    </aside>
-
+      <div class="boton1">
+        <button id="descifrar">descifrar</button>
+      </div>
+        <div class="boton2">
+        <button id="cifrar">cifrar</button>
+      </div>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

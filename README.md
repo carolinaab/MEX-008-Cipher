@@ -1,3 +1,9 @@
+El proyecto se dirige a los niños, para su entretenimento. 
+Éstos usuarios fueron elegidos mediante consultas y entrevistas a niños cercanos, en su opinion, comentaron que les gustaria imaginar que charlaban con sus personajes favoritos de una manera secreta.
+La finalidad del interfaz es que sea dinamico.
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
