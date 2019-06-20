@@ -1,77 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Cipher for kids</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      
-    <main class="contenido">
-<center>
-      
-        <h1>Cipher for kids</h1>
-        <p class="parrafo">
-          <strong>Phineas y Ferb</strong> han inventado una forma de planear sus
-          proyectos sin que <strong>Candace</strong> se entere, <br />
-          está mensajeria secreta les permitira comunicarse de manera segura.
-          <br />
-          ¡Tú tambien puedes unirte a la gran aventura! <br />
-          Descubre que quieren contarte tus nuevos amigos.
-        </p>
-        <img
-          class="imagenes"
-          src="https://i.kym-cdn.com/entries/icons/facebook/000/017/738/phineas-and-ferb-01.jpg"
-          alt="p&f"
-        />
-      </center>
-    </main>
-      
-      <section class="caja-cifrado">
-        <!--caja de cifrado-->
-        <textarea
-          name="mensaje1"
-          id="cifrado"
-          cols="30"
-          rows="10"
-          required
-        ></textarea>
-        
-      </section>
-       <br>
-      <!--offset-->
-      <div class="offset">
-        <label for="clave">clave</label><br /><input
-          type="number"
-          id="offset-text"
-          required
-          value="0"
-          min="0"
-          max="100"
-          ;
-        />
-      </div>
-      <br>
+<html lang="en" dir="ltr">
 
-      <!--caja de decifrado-->
-      <section class="caja-descifrar">
-        <textarea
-          name="mensaje2"
-          id="cifrado"
-          cols="30"
-          rows="10"
-          placeholder="escribe tu mensaje"
-          required
-        ></textarea>
-      </section>
-      <div class="boton1">
-        <button id="descifrar">descifrar</button>
-      </div>
-        <div class="boton2">
-        <button id="cifrar">cifrar</button>
-      </div>
-    
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="imagen" href="../favicon.ico">
+  <title>Cifrado para niños</title>
+</head>
+
+<body>
+  <div class="bienvenida">
+    <header>
+      <h1>Bienvenid@s</h1>
+      <figure class="logo">
+<a href="#">
+  <img src="../Zone.png" alt="">
+</a>
+      </figure>
+    </header>
+    <center>
+      <main>
+        <h1 class="titulo">Cifrado para niños</h1>
+        <p class="parrafo"><strong>Phineas y Ferb </strong> han ideado una nueva forma de
+          comunicarse
+          <br>
+          y planear sus proyectos sin que <strong>Candance</strong> se entere. 
+          <br>
+          ¡Tú también puedes unirte a está gran aventura!
+        Descubre que quieren contarte tus nuevos amigos mediante mensajes secretos.
+        </p>
+      </main>
+    </center>
+  </div>
+  <!--cifrado-->
+<aside>
+
+  <section class="cifrado">
+    <label for="number" class="favorito">¿Tu número favorito es?</label>
+    <input type="number" id="offset" min="1" max="99" required value="13">
+    <input type="text" id="input-encode" placeholder="ingresa tu mensaje">
+    <input type="text" id="input-decode" placeholder="seré tu mensaje cifrado">
+  </section>
+  <!--caja descifrado-->
+  <section class="descifrado">
+    <label for="number" class="cumple">¡día de tu cumple!</label>
+    <input type="number" id="offset2" min="1" max="99" required value="13">
+    <input type="text" id="input-deco" placeholder="ingresa tu mensaje">
+    <input type="text" id="input-enco" placeholder="seré tu mensaje descifrado">
+
+  </section>
+</aside>
+
+
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

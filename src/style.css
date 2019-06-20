@@ -1,60 +1,80 @@
-
-.imagenes {
-    width: 150px;
-    height: 150px;
-   
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
 body {
-   background-image: linear-gradient(to right, #ccffff, #00b3b3, #004d4d);
+ background-image: url("../pencil-2782840_640.jpg");
+background-color: transparent;
 }
+.parrafo {
+font-size: 20pxpx;
+font-family: cursive;
 
-.contenido .parrafo{
-    width: -50px;
-    height: 100px;
-    font-family: cursive;
-    font-size: 20px;
-    color: rebeccapurple black;
+}
+.cifrado {
+margin-bottom: 30%;
+margin-top: 60px;
+margin: 3%;
+
+
+
+
+
+}
+.descifrado {
+    margin-top: 200px;
+    margin: 3%
     
+  
 }
 
-.caja-cifrado{
- position: absolute;
- right:250px;
- top: 450px;
+#input-deco {
+ height: 95px;
+ margin-top:25%;
+ border: 1px solid rgb(170, 116, 125);
+
+}
+#input-enco {
+ height: 95px;
+ border: 1px solid rgb(170, 116, 125);
+}
+#input-decode {
+ height: 100px;
+ margin-top: 15%;
+ border: 1px solid rgb(47, 78, 60);
  
+}
+#input-encode {
+ height: 100px;
+ border: 1px solid rgb(47, 78, 60);
+}
+header {
+    background-color: rgb(14, 139, 139);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
 
-}
-.caja-descifrar { 
- 
- width: 200px;
- position:absolute;
- right: 800px;
- top: 450px;
-  
+header a img {
+    width: 15%;
+    height: 10%;
+   justify-content: left; 
+ }
 
+ aside {
+     display: flex;
+     justify-content: space-between;
+ }
+.favorito {
+    color: red;
+    font-size: 16px
 }
-.offset {
-    
-    width: 50px;
-    position: absolute;
-    right: 610px;
-    top: 450px;
-    font-family: cursive;
-    font-size: 20px;
+     
+.cumple {
+    color: red;
+    font-size: 16px
 }
-.boton1{
-  
-   width: 60px;
-   position: absolute;
-   right: 500px;
-   top: 500px;
 }
-.boton2 {
-
-    width: 70px;
-    position: absolute;
-    right: 680px;
-    top:500px;
-}
-  
