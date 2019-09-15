@@ -1,80 +1,178 @@
 * {
-  padding: 0%;
-  margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
- background-image: url("../pencil-2782840_640.jpg");
-background-color: transparent;
-}
-.parrafo {
-font-size: 20pxpx;
-font-family: cursive;
+    background-image: url(https://static.tvgcdn.net/feed/1/808/thumbs/12518808_1300x1733.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-size:50%;
+  
 
 }
-.cifrado {
-margin-bottom: 30%;
-margin-top: 60px;
-margin: 3%;
 
+.contenido-header h1 {
+    font-family:arial;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+   
+}
 
+.contenido-header p {
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+}
 
+.contenido-cifrado-de-cesar {
+     width: 50%;
+    height: 100vh;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgb(51, 107, 153);
+    margin: 0 auto;
+  
+    margin-right: -15px;
 
+    background-color: rgb(82, 140, 163);
 
 }
-.descifrado {
-    margin-top: 200px;
-    margin: 3%
-    
+
+
+.contentenido-offset{
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 20px;
+    font-family: arial;
+    color: white;
+   
+}
+
+
+.link-cifrar{
+    width: 100%;
+    font-size: 22px;
+    font-family: arial;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
   
 }
-
-#input-deco {
- height: 95px;
- margin-top:25%;
- border: 1px solid rgb(170, 116, 125);
-
-}
-#input-enco {
- height: 95px;
- border: 1px solid rgb(170, 116, 125);
-}
-#input-decode {
- height: 100px;
- margin-top: 15%;
- border: 1px solid rgb(47, 78, 60);
- 
-}
-#input-encode {
- height: 100px;
- border: 1px solid rgb(47, 78, 60);
-}
-header {
-    background-color: rgb(14, 139, 139);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    align-items: center;
+ a:hover {
+    border-bottom: 2px solid rgb(202, 60, 60);
+    color: rgb(60, 202, 91);
+    padding-bottom: 5px;
+    transition: 0.3s;
 }
 
-header a img {
-    width: 15%;
-    height: 10%;
-   justify-content: left; 
- }
+.link_active {
+    border-bottom: 2px solid #008F99;
+    color: white ;
+    padding-bottom: 5px;
+}
 
- aside {
-     display: flex;
-     justify-content: space-between;
- }
-.favorito {
-    color: red;
-    font-size: 16px
+.contenido-mensaje {
+    width: 100%;
+    margin-top: 20px;
 }
-     
-.cumple {
-    color: red;
-    font-size: 16px
+
+.contenido-mensaje p { 
+    font-family: arial;
+    color:rgb(8, 8, 8);
+    margin-bottom: 10px;
+    font-size: 20px;
 }
+
+.caja-mensaje{
+    width: 100%;
+    height: 130px;
+    resize: none;
+    outline: 0px;
+}
+
+.btn-cifrar,
+.btn-descifrar {
+    border: 0px;
+    width: 170px;
+    height: 50px;
+    background-color:rgb(230, 91, 27);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 3px 3px 7px 1px #898989;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-cifrar:hover,
+.btn-descifrar:hover {
+    background-color: rgb(176, 230, 76);
+}
+
+.btn-cirar:focus,
+.btn-descifrar:focus{
+    outline: 0px;
+}
+
+.btn_recargar {
+    border: 0px;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(51, 207, 124);
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 3px 3px 7px 1px #898989;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn_recargar:hover {
+    background-color:rgb(27, 115, 230);
+}
+
+.btn_reload:focus {
+    outline: 0px;
+}
+
+.comprobar-mensaje {
+    width: 97%;
+    height: auto;
+    min-height: 130px;
+    background-color: #DADADA;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 1px #898989;
+}
+
+
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+@media (max-width:767px) {
+    .contenido-cifrado-de-cesar {
+        width: 85%;
+    }
 }

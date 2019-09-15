@@ -1,57 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="imagen" href="../favicon.ico">
-  <title>Cifrado para niños</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
-  <div class="bienvenida">
-    <header>
-      <h1>Bienvenid@s</h1>
-      <figure class="logo">
-<a href="#">
-  <img src="../Zone.png" alt="">
-</a>
-      </figure>
+
+  <!--CONTENEDOR DEL CIFRADO-->
+  <section id="contenido-cifrado-de-cesar" class="contenido-cifrado-de-cesar">
+
+    <!--HEADER-->
+    <header class="contenido-header">
+      <h1>Cifrado para niños</h1>
+      <p> Envia y recibe mensajes secretos de tus nuevos amigos <br>
+        y descubre lo que <strong>Phineas</strong> y <strong>Ferb</strong> quieren contarte</p>
     </header>
-    <center>
-      <main>
-        <h1 class="titulo">Cifrado para niños</h1>
-        <p class="parrafo"><strong>Phineas y Ferb </strong> han ideado una nueva forma de
-          comunicarse
-          <br>
-          y planear sus proyectos sin que <strong>Candance</strong> se entere. 
-          <br>
-          ¡Tú también puedes unirte a está gran aventura!
-        Descubre que quieren contarte tus nuevos amigos mediante mensajes secretos.
-        </p>
-      </main>
-    </center>
-  </div>
-  <!--cifrado-->
-<aside>
 
-  <section class="cifrado">
-    <label for="number" class="favorito">¿Tu número favorito es?</label>
-    <input type="number" id="offset" min="1" max="99" required value="13">
-    <input type="text" id="input-encode" placeholder="ingresa tu mensaje">
-    <input type="text" id="input-decode" placeholder="seré tu mensaje cifrado">
-  </section>
-  <!--caja descifrado-->
-  <section class="descifrado">
-    <label for="number" class="cumple">¡día de tu cumple!</label>
-    <input type="number" id="offset2" min="1" max="99" required value="13">
-    <input type="text" id="input-deco" placeholder="ingresa tu mensaje">
-    <input type="text" id="input-enco" placeholder="seré tu mensaje descifrado">
+    <!--ENLACES -->
 
+    <div id="cifrar-descifrar" class="link-cifrado">
+      <a href="#" id="link-cifrar" class="link_active">Codificar</a>
+      <a href="#" id="link-descifrar">Decodificar</a>
+    </div>
+
+    <!--CAJA CIFRADO-->
+
+    <div id="contenido-mensaje-cifrar" class="contenido-mensaje display_block">
+      <p>Enviar mensaje:</p>
+      <textarea id="caja-mensaje-cifrar" class="caja-mensaje" style="font-size: 20px" s></textarea>
+      <div class="contentenido-offset">
+        <label class="label">Ingresa tu numero favorito</label>
+        <input type="number" id="offset-cifrar" class="offset-cifrar" style="font-size: 20px">
+      </div>
+      <button id="btn-cifrar" class="btn-cifrar">Codifica tu Mensaje</button>
+      <div id="msj-cifrar" class="comprobar-mensaje">
+        <p id="comprobar-mensaje-cifrar"></p>
+      </div>
+      <button onclick="location.reload();" class="btn_recargar">Limpiar</button>
+    </div>
+
+    <!--CAJA DESCIFRADO-->
+
+    <div id="contenido-mensaje-descifrar" class="contenido-mensaje display_none">
+      <p>Descubre tu mensaje:</p>
+      <textarea id="caja-mensaje-descifrar" class="caja-mensaje" style="font-size: 20px"></textarea>
+      <div class="offset-descifrar">
+        <label class="label">Ingresa tu numero favorito:</label>
+        <input type="number" id="offset-descifrar" class="offset-descifrar" style="font-size: 20px">
+      </div>
+      <button id="btn-descifrar" class="btn-descifrar">Decodifica tu Mensaje</button>
+      <div id="msj-cifrar" class="comprobar-mensaje">
+        <p id="comprobar-mensaje-descifrar"></p>
+      </div>
+      <button onclick="location.reload();" class="btn_recargar">Limpiar</button>
+    </div>
   </section>
-</aside>
 
 
   <div id="root"></div>
