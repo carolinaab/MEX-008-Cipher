@@ -18,15 +18,15 @@
     <!--HEADER-->
     <header class="contenido-header">
       <h1>Cifrado para niños</h1>
-      <p> Envia y recibe mensajes secretos de tus nuevos amigos <br>
-        y descubre lo que <strong>Phineas</strong> y <strong>Ferb</strong> quieren contarte</p>
+      <p> Envia y recibe mensajes secretos con tus amigos <br>
+
     </header>
 
     <!--ENLACES -->
 
     <div id="cifrar-descifrar" class="link-cifrado">
-      <a href="#" id="link-cifrar" class="link_active">Codificar</a>
-      <a href="#" id="link-descifrar">Decodificar</a>
+      <a href="#" id="link-cifrar" class="link_active">Cifrar mensaje</a>
+      <a href="#" id="link-descifrar">Descifrar mensaje</a>
     </div>
 
     <!--CAJA CIFRADO-->
@@ -36,9 +36,9 @@
       <textarea id="caja-mensaje-cifrar" class="caja-mensaje" style="font-size: 20px" s></textarea>
       <div class="contentenido-offset">
         <label class="label">Ingresa tu numero favorito</label>
-        <input type="number" id="offset-cifrar" class="offset-cifrar" style="font-size: 20px">
+        <input type="number" id="offset-cifrar" class="offset-cifrar" style="font-size: 20px" min="1" max="100">
       </div>
-      <button id="btn-cifrar" class="btn-cifrar">Codifica tu Mensaje</button>
+      <button id="btn-cifrar" class="btn-cifrar">Cifrar</button>
       <div id="msj-cifrar" class="comprobar-mensaje">
         <p id="comprobar-mensaje-cifrar"></p>
       </div>
@@ -52,9 +52,9 @@
       <textarea id="caja-mensaje-descifrar" class="caja-mensaje" style="font-size: 20px"></textarea>
       <div class="offset-descifrar">
         <label class="label">Ingresa tu numero favorito:</label>
-        <input type="number" id="offset-descifrar" class="offset-descifrar" style="font-size: 20px">
+        <input type="number" id="offset-descifrar" class="offset-descifrar" style="font-size: 20px" min="1" max="100">
       </div>
-      <button id="btn-descifrar" class="btn-descifrar">Decodifica tu Mensaje</button>
+      <button id="btn-descifrar" class="btn-descifrar">Descifrar</button>
       <div id="msj-cifrar" class="comprobar-mensaje">
         <p id="comprobar-mensaje-descifrar"></p>
       </div>
