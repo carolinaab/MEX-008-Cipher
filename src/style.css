@@ -4,10 +4,10 @@
 }
 
 body {
-   background: #50E7CF;
+    background-image: url(https://http2.mlstatic.com/kit-imprimible-candy-bar-phineas-y-ferb-fiesta-3x1-D_NQ_NP_838221-MLV20730504469_052016-Q.jpg);
     background-size: 30%;
     background-repeat: no-repeat;
-    background-size:50%;
+    background-size:30%;
   
 
 }
@@ -28,12 +28,12 @@ body {
 }
 
 .contenido-cifrado-de-cesar {
-     width: 50%;
+    width: 50%;
     height: 100vh;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #E7F2F8;
-    margin: 0 auto;
+    margin-left:45%;
     background-color:rgb(66, 148, 148);
 
 }
@@ -112,7 +112,7 @@ a {
     margin-top: 10px;
     color: #fff;
     font-size: 30px;
-    box-shadow: 3px 3px 7px 1px #898989;
+    box-shadow: 5px 5px 0 0 #901d53;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -129,14 +129,14 @@ a {
 
 .btn_recargar {
     border: 0px;
-    width: 170px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     background-color: rgb(25, 185, 11);
     border-radius: 5px;
     margin-top: 15px;
     color: #fff;
-    font-size: 30px;
-    box-shadow: 3px 3px 7px 1px #898989;
+    font-size: 25px;
+    box-shadow: 3px 3px 7px 1px #8b3333;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -171,5 +171,10 @@ a {
 @media (max-width:767px) {
     .contenido-cifrado-de-cesar {
         width: 85%;
+        height: 100vh;
+      
+    }
+    body{
+       background-size: 30%;
     }
 }
